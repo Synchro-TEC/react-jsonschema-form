@@ -25,6 +25,7 @@ function RadioWidget(props) {
           <span>
             <input
               type="radio"
+              className="sv-mr--5"
               checked={checked}
               name={name}
               required={required}
@@ -33,7 +34,7 @@ function RadioWidget(props) {
               autoFocus={autofocus && i === 0}
               onChange={_ => onChange(option.value)}
             />
-            <span>{option.label}</span>
+            {option.label}
           </span>
         );
 

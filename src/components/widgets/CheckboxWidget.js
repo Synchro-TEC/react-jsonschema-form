@@ -21,6 +21,7 @@ function CheckboxWidget(props) {
       )}
       <label>
         <input
+          className="sv-mr--5"
           type="checkbox"
           id={id}
           checked={typeof value === "undefined" ? false : value}
@@ -29,7 +30,7 @@ function CheckboxWidget(props) {
           autoFocus={autofocus}
           onChange={event => onChange(event.target.checked)}
         />
-        <span>{label}</span>
+        {label}
       </label>
     </div>
   );

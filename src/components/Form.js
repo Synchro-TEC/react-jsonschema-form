@@ -179,7 +179,7 @@ export default class Form extends Component {
 
     return (
       <form
-        className={className ? className : "rjsf"}
+        className={className ? className : "sv-form"}
         id={id}
         name={name}
         method={method}
@@ -207,7 +207,7 @@ export default class Form extends Component {
           children
         ) : (
           <p>
-            <button type="submit" className="btn btn-info">
+            <button type="submit" className="sv-button info">
               Submit
             </button>
           </p>

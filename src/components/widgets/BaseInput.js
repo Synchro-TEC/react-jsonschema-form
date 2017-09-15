@@ -24,7 +24,7 @@ function BaseInput(props) {
   };
   return (
     <input
-      className="form-control"
+      className="sv-mb--10"
       readOnly={readonly}
       disabled={disabled}
       autoFocus={autofocus}

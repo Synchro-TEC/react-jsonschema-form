@@ -50,7 +50,7 @@ function Label(props) {
     return <div />;
   }
   return (
-    <label className="control-label" htmlFor={id}>
+    <label className="sv-mb--0" htmlFor={id}>
       {required ? label + REQUIRED_FIELD_SYMBOL : label}
     </label>
   );
