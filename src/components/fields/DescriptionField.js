@@ -9,9 +9,9 @@ function DescriptionField(props) {
   }
   if (typeof description === "string") {
     return (
-      <p id={id} className="field-description">
+      <span id={id} className="field-description">
         {description}
-      </p>
+      </span>
     );
   } else {
     return (

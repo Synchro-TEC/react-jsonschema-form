@@ -55,94 +55,94 @@ const cmOptions = {
   indentWithTabs: false,
   tabSize: 2,
 };
-const themes = {
-  default: {
-    stylesheet:
-      "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
-  },
-  cerulean: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css",
-  },
-  cosmo: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cosmo/bootstrap.min.css",
-  },
-  cyborg: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cyborg/bootstrap.min.css",
-    editor: "blackboard",
-  },
-  darkly: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/darkly/bootstrap.min.css",
-    editor: "mbo",
-  },
-  flatly: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/flatly/bootstrap.min.css",
-    editor: "ttcn",
-  },
-  journal: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css",
-  },
-  lumen: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/lumen/bootstrap.min.css",
-  },
-  paper: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/paper/bootstrap.min.css",
-  },
-  readable: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/readable/bootstrap.min.css",
-  },
-  sandstone: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/sandstone/bootstrap.min.css",
-    editor: "solarized",
-  },
-  simplex: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/simplex/bootstrap.min.css",
-    editor: "ttcn",
-  },
-  slate: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/slate/bootstrap.min.css",
-    editor: "monokai",
-  },
-  spacelab: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css",
-  },
-  "solarized-dark": {
-    stylesheet:
-      "//cdn.rawgit.com/aalpern/bootstrap-solarized/master/bootstrap-solarized-dark.css",
-    editor: "dracula",
-  },
-  "solarized-light": {
-    stylesheet:
-      "//cdn.rawgit.com/aalpern/bootstrap-solarized/master/bootstrap-solarized-light.css",
-    editor: "solarized",
-  },
-  superhero: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/superhero/bootstrap.min.css",
-    editor: "dracula",
-  },
-  united: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/united/bootstrap.min.css",
-  },
-  yeti: {
-    stylesheet:
-      "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/yeti/bootstrap.min.css",
-    editor: "eclipse",
-  },
-};
+// const themes = {
+//   default: {
+//     stylesheet:
+//       "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+//   },
+//   cerulean: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css",
+//   },
+//   cosmo: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cosmo/bootstrap.min.css",
+//   },
+//   cyborg: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cyborg/bootstrap.min.css",
+//     editor: "blackboard",
+//   },
+//   darkly: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/darkly/bootstrap.min.css",
+//     editor: "mbo",
+//   },
+//   flatly: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/flatly/bootstrap.min.css",
+//     editor: "ttcn",
+//   },
+//   journal: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css",
+//   },
+//   lumen: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/lumen/bootstrap.min.css",
+//   },
+//   paper: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/paper/bootstrap.min.css",
+//   },
+//   readable: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/readable/bootstrap.min.css",
+//   },
+//   sandstone: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/sandstone/bootstrap.min.css",
+//     editor: "solarized",
+//   },
+//   simplex: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/simplex/bootstrap.min.css",
+//     editor: "ttcn",
+//   },
+//   slate: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/slate/bootstrap.min.css",
+//     editor: "monokai",
+//   },
+//   spacelab: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css",
+//   },
+//   "solarized-dark": {
+//     stylesheet:
+//       "//cdn.rawgit.com/aalpern/bootstrap-solarized/master/bootstrap-solarized-dark.css",
+//     editor: "dracula",
+//   },
+//   "solarized-light": {
+//     stylesheet:
+//       "//cdn.rawgit.com/aalpern/bootstrap-solarized/master/bootstrap-solarized-light.css",
+//     editor: "solarized",
+//   },
+//   superhero: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/superhero/bootstrap.min.css",
+//     editor: "dracula",
+//   },
+//   united: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/united/bootstrap.min.css",
+//   },
+//   yeti: {
+//     stylesheet:
+//       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/yeti/bootstrap.min.css",
+//     editor: "eclipse",
+//   },
+// };
 
 class GeoPosition extends Component {
   constructor(props) {
@@ -279,56 +279,56 @@ class Selector extends Component {
   }
 }
 
-function ThemeSelector({ theme, select }) {
-  const themeSchema = {
-    type: "string",
-    enum: Object.keys(themes),
-  };
-  return (
-    <Form
-      schema={themeSchema}
-      formData={theme}
-      onChange={({ formData }) => select(formData, themes[formData])}>
-      <div />
-    </Form>
-  );
-}
+// function ThemeSelector({ theme, select }) {
+//   const themeSchema = {
+//     type: "string",
+//     enum: Object.keys(themes),
+//   };
+//   return (
+//     <Form
+//       schema={themeSchema}
+//       formData={theme}
+//       onChange={({ formData }) => select(formData, themes[formData])}>
+//       <div />
+//     </Form>
+//   );
+// }
 
-class CopyLink extends Component {
-  onCopyClick = event => {
-    this.input.select();
-    document.execCommand("copy");
-  };
-
-  render() {
-    const { shareURL, onShare } = this.props;
-    if (!shareURL) {
-      return (
-        <button className="sv-button default" type="button" onClick={onShare}>
-          Share
-        </button>
-      );
-    }
-    return (
-      <div className="input-group">
-        <input
-          type="text"
-          ref={input => (this.input = input)}
-          className="form-control"
-          defaultValue={shareURL}
-        />
-        <span className="input-group-btn">
-          <button
-            className="sv-button default"
-            type="button"
-            onClick={this.onCopyClick}>
-            <i className="glyphicon glyphicon-copy" />
-          </button>
-        </span>
-      </div>
-    );
-  }
-}
+// class CopyLink extends Component {
+//   onCopyClick = event => {
+//     this.input.select();
+//     document.execCommand("copy");
+//   };
+//
+//   render() {
+//     const { shareURL, onShare } = this.props;
+//     if (!shareURL) {
+//       return (
+//         <button className="sv-button default" type="button" onClick={onShare}>
+//           Share
+//         </button>
+//       );
+//     }
+//     return (
+//       <div className="input-group">
+//         <input
+//           type="text"
+//           ref={input => (this.input = input)}
+//           className="form-control"
+//           defaultValue={shareURL}
+//         />
+//         <span className="input-group-btn">
+//           <button
+//             className="sv-button default"
+//             type="button"
+//             onClick={this.onCopyClick}>
+//             <i className="glyphicon glyphicon-copy" />
+//           </button>
+//         </span>
+//       </div>
+//     );
+//   }
+// }
 
 class App extends Component {
   constructor(props) {
@@ -380,29 +380,29 @@ class App extends Component {
 
   onFormDataEdited = formData => this.setState({ formData, shareURL: null });
 
-  onThemeSelected = (theme, { stylesheet, editor }) => {
-    this.setState({ theme, editor: editor ? editor : "default" });
-    setImmediate(() => {
-      // Side effect!
-      document.getElementById("theme").setAttribute("href", stylesheet);
-    });
-  };
+  // onThemeSelected = (theme, { stylesheet, editor }) => {
+  //   this.setState({ theme, editor: editor ? editor : "default" });
+  //   setImmediate(() => {
+  //     // Side effect!
+  //     document.getElementById("theme").setAttribute("href", stylesheet);
+  //   });
+  // };
 
   setLiveValidate = ({ formData }) => this.setState({ liveValidate: formData });
 
   onFormDataChange = ({ formData }) =>
     this.setState({ formData, shareURL: null });
 
-  onShare = () => {
-    const { formData, schema, uiSchema } = this.state;
-    const { location: { origin, pathname } } = document;
-    try {
-      const hash = btoa(JSON.stringify({ formData, schema, uiSchema }));
-      this.setState({ shareURL: `${origin}${pathname}#${hash}` });
-    } catch (err) {
-      this.setState({ shareURL: null });
-    }
-  };
+  // onShare = () => {
+  //   const { formData, schema, uiSchema } = this.state;
+  //   const { location: { origin, pathname } } = document;
+  //   try {
+  //     const hash = btoa(JSON.stringify({ formData, schema, uiSchema }));
+  //     this.setState({ shareURL: `${origin}${pathname}#${hash}` });
+  //   } catch (err) {
+  //     this.setState({ shareURL: null });
+  //   }
+  // };
 
   render() {
     const {
@@ -411,7 +411,6 @@ class App extends Component {
       formData,
       liveValidate,
       validate,
-      theme,
       editor,
       ArrayFieldTemplate,
       transformErrors,
@@ -431,9 +430,6 @@ class App extends Component {
               onChange={this.setLiveValidate}>
               <div />
             </Form>
-          </div>
-          <div className="sv-column _20 sv-text-center">
-            <ThemeSelector theme={theme} select={this.onThemeSelected} />
           </div>
         </div>
 
@@ -487,18 +483,13 @@ class App extends Component {
                   console.log(`Focused ${id} with value ${value}`)}
                 transformErrors={transformErrors}
                 onError={log("errors")}>
-                <div className="row">
-                  <div className="col-sm-3">
-                    <button className="sv-button primary" type="submit">
-                      Submit
-                    </button>
-                  </div>
-                  <div className="col-sm-9 text-right">
-                    <CopyLink
-                      shareURL={this.state.shareURL}
-                      onShare={this.onShare}
-                    />
-                  </div>
+                <div className="sv-form-action">
+                  <button className="sv-button out-info" type="button">
+                    cancelar
+                  </button>
+                  <button className="sv-button info sv-ml--15" type="submit">
+                    salvar
+                  </button>
                 </div>
               </Form>
             )}

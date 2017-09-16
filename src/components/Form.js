@@ -208,7 +208,7 @@ export default class Form extends Component {
         ) : (
           <p>
             <button type="submit" className="sv-button info">
-              Submit
+              Enviar
             </button>
           </p>
         )}

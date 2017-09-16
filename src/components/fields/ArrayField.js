@@ -121,11 +121,11 @@ function DefaultFixedArrayFieldTemplate(props) {
       />
 
       {(props.uiSchema["ui:description"] || props.schema.description) && (
-          <div
+          <span
             className="field-description"
             key={`field-description-${props.idSchema.$id}`}>
             {props.uiSchema["ui:description"] || props.schema.description}
-          </div>
+          </span>
         )}
 
       <div

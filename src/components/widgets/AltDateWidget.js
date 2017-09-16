@@ -103,15 +103,15 @@ class AltDateWidget extends Component {
     const { time } = this.props;
     const { year, month, day, hour, minute, second } = this.state;
     const data = [
-      { type: "year", range: [1900, 2020], value: year },
-      { type: "month", range: [1, 12], value: month },
-      { type: "day", range: [1, 31], value: day },
+      { type: "Dia", range: [1, 31], value: day },
+      { type: "Mês", range: [1, 12], value: month },
+      { type: "Ano", range: [1900, 2020], value: year },
     ];
     if (time) {
       data.push(
-        { type: "hour", range: [0, 23], value: hour },
-        { type: "minute", range: [0, 59], value: minute },
-        { type: "second", range: [0, 59], value: second }
+        { type: "Hora", range: [0, 23], value: hour },
+        { type: "Minuto", range: [0, 59], value: minute },
+        { type: "Segundo", range: [0, 59], value: second }
       );
     }
     return data;
@@ -120,9 +120,9 @@ class AltDateWidget extends Component {
   render() {
     const { id, disabled, readonly, autofocus, registry, onBlur } = this.props;
     return (
-      <ul className="list-inline">
+      <ul className="sv-list-inline">
         {this.dateElementProps.map((elemProps, i) => (
-          <li key={i}>
+          <li key={i} className="sv-pr--5">
             <DateElement
               rootId={id}
               select={this.onChange}
@@ -137,12 +137,12 @@ class AltDateWidget extends Component {
         ))}
         <li>
           <a href="#" className="sv-button info" onClick={this.setNow}>
-            Now
+            Agora
           </a>
         </li>
         <li>
-          <a href="#" className="sv-button warning" onClick={this.clear}>
-            Clear
+          <a href="#" className="sv-button out-info" onClick={this.clear}>
+            Limpar
           </a>
         </li>
       </ul>
