@@ -677,22 +677,22 @@ describe("StringField", () => {
         uiSchema,
       });
 
-      Simulate.change(node.querySelector("#root_year"), {
-        target: { value: 2012 },
+      Simulate.change(node.querySelector("#root_Dia"), {
+        target: { value: 2 },
       });
-      Simulate.change(node.querySelector("#root_month"), {
+      Simulate.change(node.querySelector("#root_Mês"), {
         target: { value: 10 },
       });
-      Simulate.change(node.querySelector("#root_day"), {
-        target: { value: 2 },
+      Simulate.change(node.querySelector("#root_Ano"), {
+        target: { value: 2012 },
       });
-      Simulate.change(node.querySelector("#root_hour"), {
+      Simulate.change(node.querySelector("#root_Hora"), {
         target: { value: 1 },
       });
-      Simulate.change(node.querySelector("#root_minute"), {
+      Simulate.change(node.querySelector("#root_Minuto"), {
         target: { value: 2 },
       });
-      Simulate.change(node.querySelector("#root_second"), {
+      Simulate.change(node.querySelector("#root_Segundo"), {
         target: { value: 3 },
       });
 
@@ -724,12 +724,12 @@ describe("StringField", () => {
       const ids = [].map.call(node.querySelectorAll("select"), node => node.id);
 
       expect(ids).eql([
-        "root_year",
-        "root_month",
-        "root_day",
-        "root_hour",
-        "root_minute",
-        "root_second",
+        "root_Dia",
+        "root_Mês",
+        "root_Ano",
+        "root_Hora",
+        "root_Minuto",
+        "root_Segundo",
       ]);
     });
 
@@ -748,14 +748,14 @@ describe("StringField", () => {
       );
 
       expect(lengths).eql([
-        121 + 1, // from 1900 to 2020 + undefined
-        12 + 1,
         31 + 1,
+        12 + 1,
+        121 + 1, // from 1900 to 2020 + undefined
         24 + 1,
         60 + 1,
         60 + 1,
       ]);
-      const monthOptions = node.querySelectorAll("select#root_month option");
+      const monthOptions = node.querySelectorAll("select#root_Mês option");
       const monthOptionsValues = [].map.call(monthOptions, o => o.value);
       expect(monthOptionsValues).eql([
         "",
@@ -783,10 +783,10 @@ describe("StringField", () => {
         uiSchema,
       });
 
-      const monthOptions = node.querySelectorAll("select#root_month option");
+      const monthOptions = node.querySelectorAll("select#root_Mês option");
       const monthOptionsLabels = [].map.call(monthOptions, o => o.text);
       expect(monthOptionsLabels).eql([
-        "month",
+        "Mês",
         "01",
         "02",
         "03",
@@ -813,10 +813,10 @@ describe("StringField", () => {
         });
 
         const buttonLabels = [].map.call(
-          node.querySelectorAll("a.btn"),
+          node.querySelectorAll("a.sv-button"),
           x => x.textContent
         );
-        expect(buttonLabels).eql(["Now", "Clear"]);
+        expect(buttonLabels).eql(["Agora", "Limpar"]);
       });
 
       it("should set current date when pressing the Now button", () => {
@@ -828,7 +828,7 @@ describe("StringField", () => {
           uiSchema,
         });
 
-        Simulate.click(node.querySelector("a.btn-now"));
+        Simulate.click(node.querySelector("a.sv-button"));
 
         // Test that the two DATETIMEs are within 5 seconds of each other.
         const now = new Date().getTime();
@@ -845,8 +845,8 @@ describe("StringField", () => {
           uiSchema,
         });
 
-        Simulate.click(node.querySelector("a.btn-now"));
-        Simulate.click(node.querySelector("a.btn-clear"));
+        Simulate.click(node.querySelector("a.sv-button.info"));
+        Simulate.click(node.querySelector("a.sv-button.out-info"));
 
         expect(comp.state.formData).eql(undefined);
       });
@@ -938,13 +938,13 @@ describe("StringField", () => {
         uiSchema,
       });
 
-      Simulate.change(node.querySelector("#root_year"), {
+      Simulate.change(node.querySelector("#root_Ano"), {
         target: { value: 2012 },
       });
-      Simulate.change(node.querySelector("#root_month"), {
+      Simulate.change(node.querySelector("#root_Mês"), {
         target: { value: 10 },
       });
-      Simulate.change(node.querySelector("#root_day"), {
+      Simulate.change(node.querySelector("#root_Dia"), {
         target: { value: 2 },
       });
 
@@ -976,7 +976,7 @@ describe("StringField", () => {
 
       const ids = [].map.call(node.querySelectorAll("select"), node => node.id);
 
-      expect(ids).eql(["root_year", "root_month", "root_day"]);
+      expect(ids).eql(["root_Dia", "root_Mês", "root_Ano"]);
     });
 
     it("should render the widgets with the expected options' values", () => {
@@ -994,11 +994,11 @@ describe("StringField", () => {
       );
 
       expect(lengths).eql([
-        121 + 1, // from 1900 to 2020 + undefined
-        12 + 1,
         31 + 1,
+        12 + 1,
+        121 + 1, // from 1900 to 2020 + undefined
       ]);
-      const monthOptions = node.querySelectorAll("select#root_month option");
+      const monthOptions = node.querySelectorAll("select#root_Mês option");
       const monthOptionsValues = [].map.call(monthOptions, o => o.value);
       expect(monthOptionsValues).eql([
         "",
@@ -1026,10 +1026,10 @@ describe("StringField", () => {
         uiSchema,
       });
 
-      const monthOptions = node.querySelectorAll("select#root_month option");
+      const monthOptions = node.querySelectorAll("select#root_Mês option");
       const monthOptionsLabels = [].map.call(monthOptions, o => o.text);
       expect(monthOptionsLabels).eql([
-        "month",
+        "Mês",
         "01",
         "02",
         "03",
@@ -1071,10 +1071,10 @@ describe("StringField", () => {
         });
 
         const buttonLabels = [].map.call(
-          node.querySelectorAll("a.btn"),
+          node.querySelectorAll("a.sv-button"),
           x => x.textContent
         );
-        expect(buttonLabels).eql(["Now", "Clear"]);
+        expect(buttonLabels).eql(["Agora", "Limpar"]);
       });
 
       it("should set current date when pressing the Now button", () => {
@@ -1086,7 +1086,7 @@ describe("StringField", () => {
           uiSchema,
         });
 
-        Simulate.click(node.querySelector("a.btn-now"));
+        Simulate.click(node.querySelector("a.sv-button"));
 
         const expected = toDateString(
           parseDateString(new Date().toJSON()),
@@ -1104,8 +1104,8 @@ describe("StringField", () => {
           uiSchema,
         });
 
-        Simulate.click(node.querySelector("a.btn-now"));
-        Simulate.click(node.querySelector("a.btn-clear"));
+        Simulate.click(node.querySelector("a.sv-button.info"));
+        Simulate.click(node.querySelector("a.sv-button.out-info"));
 
         expect(comp.state.formData).eql(undefined);
       });

@@ -183,8 +183,10 @@ describe("Validation", () => {
         });
 
         it("should render errors", () => {
-          expect(node.querySelectorAll(".errors li")).to.have.length.of(1);
-          expect(node.querySelector(".errors li").textContent).eql(
+          expect(node.querySelectorAll(".sv-messagebox li")).to.have.length.of(
+            1
+          );
+          expect(node.querySelector(".sv-messagebox li").textContent).eql(
             'instance requires property "foo"'
           );
         });
@@ -236,8 +238,10 @@ describe("Validation", () => {
         });
 
         it("should render errors", () => {
-          expect(node.querySelectorAll(".errors li")).to.have.length.of(1);
-          expect(node.querySelector(".errors li").textContent).eql(
+          expect(node.querySelectorAll(".sv-messagebox li")).to.have.length.of(
+            1
+          );
+          expect(node.querySelector(".sv-messagebox li").textContent).eql(
             "instance.foo does not meet minimum length of 10"
           );
         });

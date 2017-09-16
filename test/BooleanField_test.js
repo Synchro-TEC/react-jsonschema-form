@@ -37,7 +37,7 @@ describe("BooleanField", () => {
       },
     });
 
-    expect(node.querySelector(".field label span").textContent).eql("foo");
+    expect(node.querySelector(".field label").textContent).eql("foo");
   });
 
   it("should render a single label", () => {

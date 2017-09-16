@@ -41,7 +41,7 @@ describe("DescriptionField", () => {
     };
     const { node } = createComponent(DescriptionFieldWrapper, props);
 
-    expect(node.tagName).to.equal("P");
+    expect(node.tagName).to.equal("SPAN");
   });
 
   it("should have the expected id", () => {
