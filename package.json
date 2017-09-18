@@ -1,7 +1,7 @@
 {
-  "name": "react-jsonschema-form",
+  "name": "syntec-sv-react-jsonschema-form",
   "version": "0.50.1",
-  "description": "A simple React component capable of building HTML forms out of a JSON schema.",
+  "description": "A simple React component capable of building HTML forms out of a JSON schema. Usign Saturn-V Styles",
   "scripts": {
     "build:readme": "toctoc README.md -w",
     "build:lib": "rimraf lib && cross-env NODE_ENV=production babel -d lib/ src/",
