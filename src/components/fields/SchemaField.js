@@ -76,10 +76,12 @@ function ErrorList(props) {
   return (
     <div>
       <p />
-      <ul className="error-detail bs-callout bs-callout-info">
+      <ul
+        className="error-detail bs-callout bs-callout-info"
+        style={{ marginTop: "-20px" }}>
         {errors.map((error, index) => {
           return (
-            <li className="text-danger" key={index}>
+            <li className="sv-color--red-500" key={index}>
               {error}
             </li>
           );
